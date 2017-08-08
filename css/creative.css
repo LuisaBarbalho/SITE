@@ -415,3 +415,7 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
+.altera_cortina{
+  padding-bottom: 30px;
+}
