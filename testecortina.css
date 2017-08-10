@@ -1,18 +1,18 @@
 .curtain {
-  width: 300px; /* Ensures the component is the full screen width */
-  height: 300px; /* We're using this for demo purposes */
+  width: 100%; /* Ensures the component is the full screen width */
+  height: 100%; /* We're using this for demo purposes */
   overflow: hidden; /* Allows us to slide the panels outside the container without them showing */
 }
 
 .curtain__wrapper {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
 }
 
 .curtain__panel {
   background: white;
-  width: 300px; /* Each panel takes up half the container */
-  height: 300px; /* Used for demo purposes */
+  width: 100%; /* Each panel takes up half the container */
+  height: 100%; /* Used for demo purposes */
   float: left; /* Makes sure panels are side-by-side */
   position: relative; /* Needed to define the z-index */
   z-index: 2; /* Places the panels in front of the prize */
@@ -21,26 +21,37 @@
 
 .curtain__panel--left {
   /* Styles for sliding the left panel */
+
   transform: translateX(-100%);
+}
+
+.curtain__panel--right {
+  /* Styles for sliding the left panel */
+
+  transform: translateX(100%);
 }
 
 .curtain__prize {
   background: white;
   position: absolute; /* Forces the prize position into the container start */
   z-index: 1; /* Places the prize behind the panels, which are z-index 2 */
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
 }
 
 input[type=checkbox] {
   position: absolute; /* Force the checkbox at the start of the container */
   cursor: pointer; /* Indicate the curtain is clickable */
-  width: 300px; /* The checkbox is as wide as the component */
-  height: 300px; /* The checkbox is as tall as the component */
+  width: 100%; /* The checkbox is as wide as the component */
+  height: 100%; /* The checkbox is as tall as the component */
   z-index: 100; /* Make sure the checkbox is on top of everything else */
   opacity: 0; /* Hide the checkbox */
 }
 
 input[type=checkbox]:checked ~ div.curtain__panel--left {
+  transform: translateX(0);
+}
+
+input[type=checkbox]:checked ~ div.curtain__panel--right {
   transform: translateX(0);
 }

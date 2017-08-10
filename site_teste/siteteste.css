@@ -1,0 +1,54 @@
+h1{
+  font-weight: 400;
+  font-size: 90px;
+}
+
+h2{
+  font-size: 30px;
+  font-weight: 200;
+  position: relative;
+  bottom: 15px;
+}
+
+.header{
+  position: fixed;
+  top: 0px;
+  padding: 15px 0px 10px 0px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+  text-align: right;
+  list-style-type: none;
+  margin: 0;
+  background-color: rgba(255, 106, 98, 0.4);
+  width:100%;
+  z-index: 1000;
+}
+
+.header li {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #4d0000;
+  display: inline;
+  margin-right: 70px;
+}
+
+#cover {
+
+  background: url('receitamedica_Fotor.jpg') no-repeat center bottom;
+  background-size: cover;
+  height: 785px;
+  position: relative;
+  top: -55px;
+  width: 100%;
+  z-index: 1;
+}
+
+.titulo{
+  position: relative;
+  top: 300px;
+  font-family: "Titillium Web", sans-serif;
+
+  color: #4d0000;
+  text-align: center;
+
+}
