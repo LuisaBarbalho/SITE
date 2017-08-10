@@ -422,8 +422,7 @@ body {
 
 .fundo_modulos{
   position: relative;
-  width: 100%;
-  height: 100%;
+
   min-height: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
