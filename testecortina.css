@@ -1,17 +1,17 @@
 .curtain {
-  width: 294px; /* Ensures the component is the full screen width */
+  width: 300px; /* Ensures the component is the full screen width */
   height: 300px; /* We're using this for demo purposes */
   overflow: hidden; /* Allows us to slide the panels outside the container without them showing */
 }
 
 .curtain__wrapper {
-  width: 294px;
+  width: 300px;
   height: 300px;
 }
 
 .curtain__panel {
   background: white;
-  width: 294px; /* Each panel takes up half the container */
+  width: 300px; /* Each panel takes up half the container */
   height: 300px; /* Used for demo purposes */
   float: left; /* Makes sure panels are side-by-side */
   position: relative; /* Needed to define the z-index */
@@ -24,33 +24,23 @@
   transform: translateX(-100%);
 }
 
-.curtain__panel--right {
-  /* Styles for sliding the right panel */
-  transform: translateX(100%);
-}
-
 .curtain__prize {
   background: white;
   position: absolute; /* Forces the prize position into the container start */
   z-index: 1; /* Places the prize behind the panels, which are z-index 2 */
-  width: 294px;
+  width: 300px;
   height: 300px;
 }
 
 input[type=checkbox] {
   position: absolute; /* Force the checkbox at the start of the container */
   cursor: pointer; /* Indicate the curtain is clickable */
-  width: 100%; /* The checkbox is as wide as the component */
-  height: 100%; /* The checkbox is as tall as the component */
+  width: 300px; /* The checkbox is as wide as the component */
+  height: 300px; /* The checkbox is as tall as the component */
   z-index: 100; /* Make sure the checkbox is on top of everything else */
   opacity: 0; /* Hide the checkbox */
 }
 
 input[type=checkbox]:checked ~ div.curtain__panel--left {
-  transform: translateX(0);
-}
-
-/* Slide the second panel in */
-input[type=checkbox]:checked ~ div.curtain__panel--right {
   transform: translateX(0);
 }

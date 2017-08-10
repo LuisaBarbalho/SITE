@@ -109,7 +109,7 @@ aside {
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: #4d0000;
   }
   .navbar-default .navbar-header .navbar-brand {
     color: #4d0000
@@ -127,7 +127,7 @@ aside {
     color: white;
   }
   .navbar-default.affix {
-    background-color: white;
+    background-color: rgba(255, 106, 98, 0.4);
     border-color: rgba(34, 34, 34, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
@@ -208,7 +208,7 @@ header .header-content .header-content-inner p {
   }
 }
 .section-heading {
-  margin-top: 0;
+  margin-top: -15px;
 }
 .service-box {
   max-width: 400px;
@@ -386,7 +386,7 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn {
   font-family: 'Titillium Web', 'Helvetica Neue', Arial, sans-serif;
-  border: none;
+  border-color: #4d0000;
   border-radius: 300px;
   font-weight: 400;
   text-transform: uppercase;
@@ -417,5 +417,32 @@ body {
 }
 
 .altera_cortina{
-  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+.fundo_modulos{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/modulos_Fotor.jpg');
+  text-align: center;
+  color: #4d0000;
+}
+
+.fundo_equipe{
+  height: 100%;
+}
+
+.nome_equipe{
+  padding-top: 0px;
+}
+
+.nome_equipe h1{
+  font-size: 20px;
 }
