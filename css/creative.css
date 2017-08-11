@@ -27,7 +27,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #eb3812;
+  color: rgba(255, 106, 98, 0.4);
 }
 h1,
 h2,
@@ -423,11 +423,12 @@ body {
 .fundo_modulos{
   position: relative;
 
-  min-height: auto;
+  /*min-height: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  -o-background-size: cover;*/
   background-size: cover;
-  -o-background-size: cover;
+
   background-position: center;
   background-image: url('../img/modulos_Fotor.jpg');
   text-align: center;
