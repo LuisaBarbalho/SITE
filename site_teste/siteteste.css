@@ -13,10 +13,9 @@ h2{
 .header{
   position: fixed;
   top: 0px;
-  padding: 15px 0px 10px 0px;
+  padding: 0px 0px 0px 0px;
   font-family: "Titillium Web", sans-serif;
   font-size: 15px;
-  text-align: right;
   list-style-type: none;
   margin: 0;
   background-color: rgba(255, 106, 98, 0.4);
@@ -29,15 +28,23 @@ h2{
   font-weight: 600;
   color: #4d0000;
   display: inline;
-  margin-right: 70px;
+  float: left;
+  background-color: #ff8080;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 #cover {
 
   background: url('receitamedica_Fotor.jpg') no-repeat center bottom;
   background-size: cover;
-  height: 785px;
-  position: relative;
+  height: 100%;
+  position: absolute;
   top: -55px;
   width: 100%;
   z-index: 1;
@@ -47,8 +54,27 @@ h2{
   position: relative;
   top: 300px;
   font-family: "Titillium Web", sans-serif;
-
   color: #4d0000;
   text-align: center;
 
+}
+
+.menu {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none
+
+}
+
+a, a:hover:not(.active) {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none
+  color: #4d0000;
+}
+
+.active {
+  background-color:#4d0000;
 }
