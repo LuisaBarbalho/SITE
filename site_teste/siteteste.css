@@ -22,7 +22,7 @@ h2{
 
 .titulo{
   position: relative;
-  top: 300px;
+  top: 250px;
   font-family: "Titillium Web", sans-serif;
   color: #013909;
   text-align: center;
@@ -58,8 +58,4 @@ h2{
 .topnav ul li a.active {
     background-color: #4CAF50;
     color: white;
-}
-
-.home {
-  padding-left: 55px
 }
