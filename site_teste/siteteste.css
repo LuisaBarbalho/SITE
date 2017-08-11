@@ -10,42 +10,12 @@ h2{
   bottom: 15px;
 }
 
-.header{
-  position: fixed;
-  top: 0px;
-  padding: 0px 0px 0px 0px;
-  font-family: "Titillium Web", sans-serif;
-  font-size: 15px;
-  list-style-type: none;
-  margin: 0;
-  background-color: rgba(255, 106, 98, 0.4);
-  width:100%;
-  z-index: 1000;
-}
-
-.header li {
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #4d0000;
-  display: inline;
-  float: left;
-  background-color: #ff8080;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
 #cover {
 
   background: url('receitamedica_Fotor.jpg') no-repeat center bottom;
   background-size: cover;
   height: 100%;
   position: absolute;
-  top: -55px;
   width: 100%;
   z-index: 1;
 }
@@ -54,27 +24,42 @@ ul {
   position: relative;
   top: 300px;
   font-family: "Titillium Web", sans-serif;
-  color: #4d0000;
+  color: #013909;
   text-align: center;
 
 }
 
-.menu {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none
-
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgba(117, 216, 100, 0.84);
+    overflow: hidden;
+}
+.topnav ul {
+    list-style: none;
+}
+/* Style the links inside the navigation bar */
+.topnav ul li a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
 }
 
-a, a:hover:not(.active) {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none
-  color: #4d0000;
+/* Change the color of links on hover */
+.topnav ul li a:hover {
+    background-color: #4CAF50;;
+    color: white;
 }
 
-.active {
-  background-color:#4d0000;
+/* Add a color to the active/current link */
+.topnav ul li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.home {
+  padding-left: 55px
 }
