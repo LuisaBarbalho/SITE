@@ -31,7 +31,19 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <style>
+  /* Icon when the collapsible content is shown */
+      .btn:after {
+        font-family: "Glyphicons Halflings";
+        content: "\e114";
+        float: right;
+        margin-left: 15px;
+      }
+      /* Icon when the collapsible content is hidden */
+      .btn.collapsed:after {
+        content: "\e080";
+      }
+    </style>
 </head>
 
 <body id="page-top">
@@ -75,7 +87,7 @@
         </div>
     </header>
 
-    <section class="bg-primary" id="apresentacao" style="padding-bottom:275px; padding-top:275px">
+    <section class="bg-primary" id="apresentacao">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -140,11 +152,11 @@
   <div class="bs-example">
             <div class="panel-group" id="accordion">
 
-
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><img src="img/pierre_foto.jpg"/><br><br>Pierre Freire</a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><img src="img/pierre_foto.jpg"/><br></a>
+                                <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#collapseOne">Pierre Freire</button>
                             </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in">
@@ -154,12 +166,11 @@
                         </div>
                     </div>
 
-
-
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><img src="img/hercules_foto.jpg"/><br><br>Hércules Pedrosa</a>
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><img src="img/hercules_foto.jpg"/><br></a>
+                            <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#collapseTwo">HérculesPedrosa</button>
                         </h4>
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse">
@@ -174,7 +185,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><img src="img/hercules_foto.jpg"/><br><br>Leonardo</a>
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><img src="img/hercules_foto.jpg"/><br></a>
+                            <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#collapseThree">Leonardo Negreiros</button>
                         </h4>
                     </div>
                     <div id="collapseThree" class="panel-collapse collapse">
@@ -189,7 +201,8 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><img src="img/luisa_foto.jpg"/><br><br>Luisa Barbalho</a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><img src="img/luisa_foto.jpg"/><br></a>
+                        <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#collapseFour">Luisa Barbalho</button>
                     </h4>
                 </div>
                 <div id="collapseFour" class="panel-collapse collapse">
@@ -203,7 +216,8 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"><img src="img/jales_foto.jpg"/><br><br>Mateus Jales</a>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"><img src="img/jales_foto.jpg"/><br></a>
+                    <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#collapseFive">Mateus Jales</button>
                 </h4>
             </div>
             <div id="collapseFive" class="panel-collapse collapse">
